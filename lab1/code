@@ -87,6 +87,8 @@ int main()
     head=addAtBegin(head,40);
     head=addAtBegin(head,50);
     head=AddAtEnd(head,60);
+    head=AddAtEnd(head,70);
+    head=AddAtEnd(head,80);
     head=deleteAtBegin(head);
     head=deleteAtEnd(head);
     cout<<endl;

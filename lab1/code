@@ -81,12 +81,12 @@ ListNode* AddAtEnd(ListNode* head,int x)
 
 int main()
 {
-    ListNode* head=getNode(1);
-    head=addAtBegin(head,2);
-    head=addAtBegin(head,3);
-    head=addAtBegin(head,4);
-    head=addAtBegin(head,5);
-    head=AddAtEnd(head,6);
+    ListNode* head=getNode(10);
+    head=addAtBegin(head,20);
+    head=addAtBegin(head,30);
+    head=addAtBegin(head,40);
+    head=addAtBegin(head,50);
+    head=AddAtEnd(head,60);
     head=deleteAtBegin(head);
     head=deleteAtEnd(head);
     cout<<endl;

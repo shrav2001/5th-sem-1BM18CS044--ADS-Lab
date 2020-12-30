@@ -1,44 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-int removeDuplicates(int arr[], int n)
-{
-    if (n==0 || n==1)
-        return n;
-
-    int temp[n];
-    int j = 0;
-    for (int i=0; i<n-1; i++)
-
-        if (arr[i] != arr[i+1])
-            temp[j++] = arr[i];
-
-    temp[j++] = arr[n-1];
-
-    for (int i=0; i<j; i++)
-        arr[i] = temp[i];
-
-    return j;
-}
-void printElements(int arr[], int n)
-{
-	int i;
-  sort(arr,arr+n);
-  n = removeDuplicates(arr,n);
-    for(i=0;i<n-2;i++)
-      cout<<arr[i]<<" ";
-}
 
 int main()
 {
-    int n;
-    cout<<"Enter number of elements\n";
-    cin>>n;
-    int arr[n];
-    cout<<"Enter the elements\n";
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];
-    }
-	printElements(arr, n);
+	int n,t;
+	cout<<"enter the number of test cases\n";
+	cin>>t;
+	while(t--)
+	  {
+		cout<<"Enter the number of elements\n";
+		cin>>n;
+		int a[n];
+		for(int i=0; i<n; i++)
+		{
+			cin>>a[i];
+		}
+		sort(a,a+n);
+		for(int i=0; i<n-2; i++)
+		{
+			cout<<a[i]<<" ";
+		}
+		cout<<endl;
+	}
 	return 0;
 }
